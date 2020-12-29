@@ -20,10 +20,12 @@ end
 puts sum
 
 # Create a new array which has three of each number up to 50.
+
+# Ie. [1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50] and so on, up to 50.
 #having trouble with this question
 new_array = (1..50).to_a
-tripled_new_array = new_array.map! do |num|
-    new_array.push(num.to_s+num.to_s+num.to_s)
+updated_new_array = new_array.map! do |num|
+    p 
 end
 p tripled_new_array
 
