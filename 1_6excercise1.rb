@@ -1,18 +1,16 @@
 # Output the message "I will not skateboard in the halls" 20 times.
-# 20.times do
-#     puts "I will not skateboard in the halls"
-# end
+20.times do |num|
+    puts "#{num+1} I will not skateboard in the halls"
+end
 # Create an array consisting of the above message. It should appear in the array 20 times.
-# long_array = Array.new(size=20, "I will not skateboard in the halls")
+p long_array = Array.new(size=20, "I will not skateboard in the halls")
 # p long_array
-#I need this explained to me
+#I need this explained to me: why does the Array have to be capitalized
 
 # Create an array consisting of the numbers between 1 and 50.
 #this needs to be explained to me
 new_array = (1..50).to_a
-print new_array
-
-
+p new_array
 # Use an each loop to find the sum of the numbers in the above array.
 #Why does the sum=0 have to be outside the loop
 sum = 0
@@ -25,9 +23,8 @@ puts sum
 #having trouble with this question
 new_array = (1..50).to_a
 tripled_new_array = new_array.map! do |num|
-     num.to_s+num.to_s+num.to_s
-    
+    new_array.push(num.to_s+num.to_s+num.to_s)
 end
-p number_sequence
+p tripled_new_array
 
 # Ie. [1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50] and so on, up to 50.
